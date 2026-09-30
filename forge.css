@@ -1,0 +1,191 @@
+/* Okanor's Forge. One dark look: blackened iron, hairlines, the Okanvil gold.
+   Layout: a single column; each addon is one banner row (sides alternate) linking to its own page. */
+:root {
+  --bg: #111214;
+  --iron: #1a1b1e;
+  --iron-2: #202125;
+  --line: #2e2c29;          /* hairlines, a touch warm */
+  --line-hi: #4a4137;
+  --text: #d9d6cf;
+  --dim: #9b968c;
+  --faint: #625e57;
+  --parchment: #f3e3bd;     /* headings */
+  --gold: #c0943a;
+  --gold-hi: #e0b860;
+  --ember: #e0843a;
+  --live: #8fc27a;
+
+  --display: "Marcellus", "Trajan Pro", Georgia, serif;
+  --body: "Figtree", "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+
+  --wrap: 1120px;
+  --r: 6px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box }
+html { scroll-behavior: smooth }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } * { transition: none !important } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block }
+a { color: var(--gold-hi) }
+code { font-family: var(--mono); font-size: .86em; color: var(--gold-hi); background: var(--iron); padding: 1px 5px; border-radius: 3px }
+:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px }
+
+.wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: 20px }
+section[id] { scroll-margin-top: 80px }
+
+/* ---------- top bar ---------- */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(17, 18, 20, .9);
+  box-shadow: 0 0 0 100vmax rgba(17, 18, 20, .9);
+  clip-path: inset(0 -100vmax);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none }
+.brand svg { width: 26px; height: 26px; color: var(--gold-hi) }
+.brand b { font-family: var(--display); font-weight: 400; font-size: 22px; color: var(--gold-hi); letter-spacing: .5px }
+.top nav { display: flex; gap: 20px; flex-wrap: wrap; font-size: 14px }
+.top nav a { color: var(--dim); text-decoration: none }
+.top nav a:hover, .top nav a.out { color: var(--gold-hi) }
+
+/* ---------- hero: the painted banner carries the title; the h1 is for readers and search ---------- */
+.hero { display: grid; gap: 28px; padding-block: 32px 48px }
+.hero-banner { width: 100%; height: auto; border-radius: var(--r); border: 1px solid var(--line-hi) }
+.hero-txt { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px 40px; flex-wrap: wrap }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap }
+.eyebrow { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin: 0 0 10px }
+.lede { font-size: 18px; color: var(--dim); max-width: 52ch; margin: 0 }
+.lede b { color: var(--text) }
+
+/* ---------- buttons ---------- */
+.acts { display: flex; gap: 10px; flex-wrap: wrap }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 40px; padding-inline: 18px; border-radius: var(--r);
+  border: 1px solid var(--line-hi); color: var(--text); text-decoration: none;
+  font-size: 14px; font-weight: 600; transition: border-color .15s, color .15s, background .15s;
+}
+.btn:hover { border-color: var(--gold); color: var(--gold-hi) }
+.btn svg { width: 16px; height: 16px }
+.btn.primary { background: var(--gold); border-color: var(--gold); color: #17130c }
+.btn.primary:hover { background: var(--gold-hi); border-color: var(--gold-hi); color: #17130c }
+.btn.is-off { color: var(--faint); border-style: dashed; cursor: default }
+
+/* ---------- image slots: a real image, or a dashed box naming the file it wants ---------- */
+.slot { position: relative; margin: 0; overflow: hidden; border-radius: var(--r); border: 1px solid var(--line); background: var(--iron) }
+.slot img { width: 100%; height: 100%; object-fit: cover }
+.slot figcaption { display: none }
+.slot.empty {
+  border: 1px dashed var(--line-hi);
+  background: repeating-linear-gradient(135deg, var(--iron) 0 10px, var(--iron-2) 10px 20px);
+}
+.slot.empty figcaption {
+  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px; padding: 10px; text-align: center;
+}
+.slot.empty .need { font-size: 13px; color: var(--dim); font-weight: 600 }
+.slot.empty code { font-size: 11px; background: none; color: var(--faint); word-break: break-all }
+
+.icon { width: 48px; height: 48px; flex: none; border-radius: 10px }
+.icon.empty figcaption { display: none }
+.portrait { width: 140px; height: 140px; border-radius: 50%; border-color: var(--line-hi) }
+.portrait.empty .need { font-size: 11px }
+.portrait.empty code { display: none }
+
+/* ---------- addon index strip ---------- */
+.index {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px;
+  background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden;
+  margin-bottom: 72px;
+}
+.idx { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--bg); text-decoration: none; color: var(--text); transition: background .15s }
+.idx:hover { background: var(--iron) }
+.idx .icon { width: 40px; height: 40px; border-radius: 8px }
+.idx-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0 }
+.idx-txt b { font-size: 15px }
+
+/* ---------- status chips ---------- */
+.status {
+  display: inline-block; width: max-content; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  padding: 1px 8px; border-radius: 99px; border: 1px solid currentColor;
+}
+.status.is-live { color: var(--live) }
+.status.is-forge { color: var(--ember) }
+.status.is-fork { color: var(--dim) }
+
+/* ---------- sections ---------- */
+h2.sec {
+  font-family: var(--display); font-weight: 400; color: var(--parchment);
+  font-size: clamp(30px, 4vw, 40px); margin: 0 0 28px;
+  display: flex; align-items: center; gap: 18px;
+}
+h2.sec::after { content: ""; flex: 1; height: 1px; background: var(--line) }
+.sechint { color: var(--dim); margin: -16px 0 24px }
+#addons-sec, #install { margin-bottom: 88px }
+
+/* ---------- one addon = one banner; the full story is on its own page ---------- */
+.addon {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 48px; align-items: center;
+  padding-block: 48px; border-top: 1px solid var(--line);
+}
+.addon:first-child { border-top: 0; padding-top: 0 }
+.addon.flip { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr) }
+.addon.flip .copy { order: 2 }
+.copy { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 16px }
+.addon-hd { display: flex; align-items: center; gap: 14px; text-decoration: none }
+.addon-hd h3 { font-family: var(--display); font-weight: 400; font-size: 36px; line-height: 1.1; margin: 0 0 4px; color: var(--parchment) }
+.addon-hd:hover h3 { color: var(--gold-hi) }
+.tagline { margin: 0; color: var(--text); font-size: 17px; max-width: 52ch }
+
+/* the .toc stamp: what the game itself would tell you about the addon */
+.stamp { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0; padding-block: 12px; border-block: 1px solid var(--line); align-self: stretch }
+.stamp div { display: flex; flex-direction: column }
+.stamp dt { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--faint) }
+.stamp dd { margin: 0; font-family: var(--mono); font-size: 14px; color: var(--gold-hi); font-variant-numeric: tabular-nums }
+
+.banner { display: block; min-width: 0 }
+.banner .shot {
+  aspect-ratio: 16 / 10; border-radius: 10px; border-color: var(--line-hi);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .7), 0 0 0 1px rgba(0, 0, 0, .4);
+  transition: border-color .15s, transform .2s;
+}
+.banner .shot img { object-position: top left }
+.banner:hover .shot { border-color: var(--gold); transform: translateY(-2px) }
+
+/* ---------- install ---------- */
+.steps { list-style: none; counter-reset: s; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px }
+.steps li { counter-increment: s; display: flex; flex-direction: column; gap: 4px; padding: 18px; border: 1px solid var(--line); border-radius: var(--r); min-width: 0 }
+.steps li::before { content: counter(s); font-family: var(--display); font-size: 28px; line-height: 1; color: var(--gold) }
+.steps b { color: var(--parchment) }
+.steps span { color: var(--dim); font-size: 14px }
+
+/* ---------- smith + footer ---------- */
+.smith { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 28px; align-items: center; padding: 28px; border: 1px solid var(--line); border-radius: var(--r); background: var(--iron) }
+.smith p { margin: 0 0 14px; max-width: 60ch }
+.foot { padding-block: 32px 48px; font-size: 13px; color: var(--faint) }
+
+/* ---------- narrow ---------- */
+@media (max-width: 820px) {
+  .addon, .addon.flip { grid-template-columns: minmax(0, 1fr); gap: 28px }
+  .addon.flip .copy { order: 0 }
+  .hero { padding-block: 20px 32px; gap: 20px }
+  .top nav { gap: 14px }
+  .smith { grid-template-columns: minmax(0, 1fr); justify-items: start }
+}

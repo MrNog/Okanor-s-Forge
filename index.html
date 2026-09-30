@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#111214" />
+  <meta name="description" content="World of Warcraft 3.3.5a addons forged by Okanor of RATS: Okanvil, RatStash, PallyPower Skin and more." />
+  <meta property="og:title" content="Okanor's Forge" />
+  <meta property="og:description" content="WotLK 3.3.5a addons forged by Okanor of RATS." />
+  <meta property="og:image" content="https://mrnog.github.io/Okanor-s-Forge/images/art/og.jpg" />
+  <meta property="og:url" content="https://mrnog.github.io/Okanor-s-Forge/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/icons/favicon.png" />
+  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png" />
+  <title>Okanor's Forge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="forge.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-anvil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" /><path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" /><path d="M9 12v5" /><path d="M15 12v5" /><path d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" />
+    </symbol>
+    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
+    </symbol>
+  </svg>
+
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#top"><svg><use href="#i-anvil" /></svg><b>Okanor's Forge</b></a>
+      <nav aria-label="Sections">
+        <a href="#addons-sec">Addons</a>
+        <a href="#install">Install</a>
+        <a class="out" href="https://mrnog.github.io/RATS/" target="_blank" rel="noopener">RATS hub ↗</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <h1 class="sr-only">Okanor's Forge</h1>
+      <img class="hero-banner" src="images/art/forge-banner.webp" alt="Okanor's Forge: WotLK 3.3.5a addons, a war-mace resting on a Horde anvil">
+      <div class="hero-txt">
+        <div>
+          <p class="eyebrow">WotLK 3.3.5a · Warmane · Onyxia</p>
+          <p class="lede">Addons I build for World of Warcraft 3.3.5a. Made first for my guild, <b>RATS</b>, free for anyone to play.</p>
+        </div>
+        <div class="acts">
+          <a class="btn primary" href="#addons-sec">See the addons</a>
+          <a class="btn" href="https://github.com/MrNog" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="index" id="index" aria-label="Addons"></nav>
+
+    <section id="addons-sec">
+      <h2 class="sec">On the anvil</h2>
+      <div id="addons"></div>
+    </section>
+
+
+    <section id="install">
+      <h2 class="sec">Install</h2>
+      <ol class="steps">
+        <li><b>Download</b><span>the <code>.zip</code> of the addon</span></li>
+        <li><b>Extract</b><span>into <code>World of Warcraft\Interface\AddOns\</code></span></li>
+        <li><b>Restart</b><span>the game so the new addon loads</span></li>
+      </ol>
+    </section>
+
+    <section class="smith">
+      <div id="smithArt"></div>
+      <div>
+        <p class="eyebrow">The smith</p>
+        <p>Okanor, Holy Paladin and Warchief of <b>RATS</b> on Warmane Onyxia (Horde). Bugs and ideas go to the guild Discord or a GitHub issue.</p>
+        <a class="btn" href="https://mrnog.github.io/RATS/" target="_blank" rel="noopener">Visit the RATS hub ↗</a>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>© <span id="year"></span> Okanor. All rights reserved. Download and play freely; no copying, changing or re-uploading without permission.</p>
+    </footer>
+  </div>
+
+  <script src="forge.js"></script>
+</body>
+
+</html>

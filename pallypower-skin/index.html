@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141517" />
+  <meta name="description"
+    content="PallyPower Skin — the Okanvil look for PallyPower on WoW 3.3.5a: flat dark buttons, buff state as a coloured edge." />
+  <link rel="icon" href="../images/icons/favicon.png" />
+  <title>PallyPower Skin — Okanor's Forge</title>
+
+  <link rel="stylesheet" href="../assets/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/page.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </symbol>
+    <symbol id="i-anvil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" /><path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" /><path d="M9 12v5" /><path d="M15 12v5" /><path d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" />
+    </symbol>
+  </svg>
+
+  <div class="ok-wrap">
+
+    <header class="top">
+      <div class="top-left">
+        <a class="back" href="../index.html">← Forge</a>
+        <a class="brand" href="#top" aria-label="PallyPower Skin, back to top">
+          <svg>
+            <use href="#i-anvil" />
+          </svg>
+          <b>PallyPower Skin</b>
+          <span>by Okanor · a RATS Warchief</span>
+        </a>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#edges">Buff edges</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div>
+        <p class="eyebrow">WotLK 3.3.5a · In the forge</p>
+        <h1>PallyPower, in the Okanvil look.</h1>
+        <p class="lede">Flat dark buttons, 1px hairlines and real spell icons, cropped. Who is missing a blessing shows
+          as a <b>coloured edge</b> you can read mid-pull.</p>
+        <div class="cta-row">
+          <span class="ok-btn">Not released yet</span>
+        </div>
+        <p class="meta">Needs PallyPower · uses Okanvil's font when Okanvil is installed</p>
+      </div>
+      <figure class="shot"><img src="../images/pallypower-skin/bar.webp" alt="PallyPower buff bar with the skin in a raid"></figure>
+    </section>
+
+    <!-- EDGES -->
+    <section class="feature" id="edges">
+      <div class="copy">
+        <div class="tag">Buff state</div>
+        <h2>One glance, the whole raid.</h2>
+        <p>Every class button on the bar carries a coloured left edge.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Amber</b>: some players are missing the blessing</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Red</b>, with a faint red wash: nobody in that class has it</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Gold</b>: a special buff, Righteous Fury or a seal</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/pallypower-skin/window.webp" alt="PallyPower assignment window with the skin"></figure>
+    </section>
+
+    <!-- INSTALL -->
+    <section class="install" id="install">
+      <div class="intro">
+        <h2>Install.</h2>
+        <p>The skin turns off the ElvUI AddOnSkins skin for PallyPower, so the two don't fight.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <div><b>Install PallyPower</b><span>The skin changes its look, it doesn't replace it.</span></div>
+        </li>
+        <li>
+          <div><b>Extract the skin into AddOns</b><span><code>World of Warcraft\Interface\AddOns\PallyPower_Skin</code></span></div>
+        </li>
+        <li>
+          <div><b>Start the game</b><span>A full restart, so the new textures load.</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="ok-foot">
+      <span>PallyPower Skin · forged by <b>Okanor</b> for <b>RATS</b></span>
+      <span>World of Warcraft is a trademark of Blizzard Entertainment. PallyPower Skin is a fan-made addon.</span>
+    </footer>
+  </div>
+
+  <script src="../assets/page.js"></script>
+</body>
+
+</html>

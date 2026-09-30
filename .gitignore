@@ -1,0 +1,23 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+
+# logs / temp
+*.log
+__pycache__/
+
+# local Claude Code overrides (machine-specific, not shared)
+.claude/settings.local.json
+
+# scratch notes and local previews (not part of the site)
+IDEAS.md
+docs/IDEAS.md
+_mock/
+
+# full-size source art: the site ships the converted webp in images/
+*.psd
+images/**/*.png
+!images/icons/*.png

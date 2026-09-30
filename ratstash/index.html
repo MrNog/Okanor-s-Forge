@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141517" />
+  <meta name="description"
+    content="RatStash — bags and bank for WoW 3.3.5a: one window each, a fixed sort order, gear sets and raid loot kept apart." />
+  <link rel="icon" href="../images/icons/favicon.png" />
+  <title>RatStash — Okanor's Forge</title>
+
+  <link rel="stylesheet" href="../assets/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/page.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </symbol>
+    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </symbol>
+    <symbol id="i-anvil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" /><path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" /><path d="M9 12v5" /><path d="M15 12v5" /><path d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" />
+    </symbol>
+  </svg>
+
+  <div class="ok-wrap">
+
+    <header class="top">
+      <div class="top-left">
+        <a class="back" href="../index.html">← Forge</a>
+        <a class="brand" href="#top" aria-label="RatStash, back to top">
+          <svg>
+            <use href="#i-anvil" />
+          </svg>
+          <b>RatStash</b>
+          <span>by Okanor · a RATS Warchief</span>
+        </a>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#order">Sorting</a>
+        <a href="#layouts">Layouts</a>
+        <a href="#settings">Settings</a>
+        <a href="#more">More</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div>
+        <p class="eyebrow">WotLK 3.3.5a · In the forge</p>
+        <h1>Your bags, in the same order every time.</h1>
+        <p class="lede">Bags and bank in one window each. Bagnon's single window, AdiBags' sorting, and a
+          <b>fixed order</b> so nothing jumps around. Raid loot stays apart from your own stacks.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/RatStash-/releases/latest/download/RatStash.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+          <a class="ok-btn" href="https://github.com/MrNog/RatStash-">Source on GitHub</a>
+        </div>
+        <p class="meta">Free to play · press <code>B</code> or type <code>/rst</code> in game</p>
+      </div>
+      <figure class="shot"><img src="../images/ratstash/groups-wide.webp"
+          alt="Bags in the Groups layout: gear sets, professions, gems, cooking, consumables and pinned items"></figure>
+    </section>
+
+    <!-- ORDER -->
+    <section class="feature" id="order">
+      <div class="copy">
+        <div class="tag">Sorting</div>
+        <h2>Everything has a fixed place.</h2>
+        <p>Pinned items, then your sets, then consumables, enchanting, gems, ore, herbs… and gear at the end. Free
+          space always comes last, never in the middle.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Items are only <b>drawn</b> in order; nothing moves in your real bags, so it works in combat</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Nothing reshuffles under your mouse: sell or move items one after another</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Your Hearthstone is pinned from the start</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Alt-click</b> any item to pin it, at the top or the bottom</span></li>
+        </ul>
+      </div>
+      <figure class="shot tall"><img src="../images/ratstash/groups.webp"
+          alt="Narrow bags window in the Groups layout, one block per kind"></figure>
+    </section>
+
+    <!-- LAYOUTS -->
+    <section class="feature flip" id="layouts">
+      <div class="copy">
+        <div class="tag">Three layouts</div>
+        <h2>One grid, sets, or a block per kind.</h2>
+        <p>Pick per window. The bank starts in blocks; small blocks share a row and fill the gaps.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>One grid</b>, like Bagnon</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Grid + sets</b>: each Equipment Manager set in its own group, in slot order</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Groups</b>: a block per kind of item</span></li>
+        </ul>
+      </div>
+      <div class="stack pair">
+        <figure class="shot"><img src="../images/ratstash/sets.webp" alt="Grid + sets layout: Set Val and Set Holy above one grid"></figure>
+        <figure class="shot"><img src="../images/ratstash/grid.webp" alt="One grid layout"></figure>
+      </div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section class="feature" id="settings">
+      <div class="copy">
+        <div class="tag">Settings <i>/rst options</i></div>
+        <h2>Set it once, for every toon.</h2>
+        <p>Settings sit in their own window and are account-wide. Columns, scale and the banner behind your items,
+          as strong or faint as you like.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Virtual stacks: identical items and full stacks shown as one slot</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Item level in the quality colour, and a gold <b>BoE</b> tag</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Raid loot gets its own group while you're master looter</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/ratstash/settings.webp"
+          alt="RatStash settings: layout, virtual stacks, size and look, items"></figure>
+    </section>
+
+    <!-- SMALL STUFF -->
+    <section class="tools" id="more">
+      <h2>And the small stuff.</h2>
+      <p>Things you only notice when they're missing.</p>
+      <div class="grid">
+        <article class="tool">
+          <h3>Raid loot never mixes with yours</h3>
+          <p>Loot one Primordial Saronite in a PuG and it shows apart from your own six, glowing green with its trade
+            timer, until you say it's yours. With Okanvil, reserved loot goes to <b>[HR] Reserved</b>.</p>
+        </article>
+        <article class="tool">
+          <h3>Sell just one</h3>
+          <p>At a vendor, bank, mailbox or trade, identical gear splits back into one slot each.</p>
+        </article>
+        <article class="tool">
+          <h3>Stack to bank</h3>
+          <p>One click at the bank moves stackables onto the stacks you already keep there.</p>
+        </article>
+        <article class="tool">
+          <h3>Offline bank</h3>
+          <p>Browse your bank from anywhere with <code>/rst bank</code>.</p>
+        </article>
+        <article class="tool">
+          <h3>Bag bar</h3>
+          <p>See your bag slots, drag a new bag onto one to swap it, buy bank slots.</p>
+        </article>
+        <article class="tool">
+          <h3>Painted for RATS</h3>
+          <p>The war banner behind your items and the leather pouch in every empty slot.</p>
+          <div class="stack pair">
+            <figure class="shot"><img src="../images/ratstash/art-background.webp" alt="Window background: a black war banner with a bronze rat's head"></figure>
+            <figure class="shot"><img src="../images/ratstash/art-slot.webp" alt="Empty slot: a worn leather pouch with a paw print"></figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INSTALL -->
+    <section class="install" id="install">
+      <div class="intro">
+        <h2>Install in a minute.</h2>
+        <p>Turn off other bag addons (AdiBags, Bagnon, ArkInventory…) so they don't fight over your bags.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/RatStash-/releases/latest/download/RatStash.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <div><b>Download the zip</b><span>Always the latest release, straight from GitHub.</span></div>
+        </li>
+        <li>
+          <div><b>Extract it into AddOns</b><span><code>World of Warcraft\Interface\AddOns\RatStash</code></span></div>
+        </li>
+        <li>
+          <div><b>Start the game</b><span><code>B</code> opens your bags, <code>/rst bank</code> your bank,
+              <code>/rst options</code> the settings.</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="ok-foot">
+      <span>RatStash · forged by <b>Okanor</b> for <b>RATS</b> · ideas from Bagnon and AdiBags</span>
+      <span>World of Warcraft is a trademark of Blizzard Entertainment. RatStash is a fan-made addon.</span>
+    </footer>
+  </div>
+
+  <script src="../assets/page.js"></script>
+</body>
+
+</html>
