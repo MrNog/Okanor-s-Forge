@@ -15,6 +15,8 @@
   <img src="https://img.shields.io/badge/Client-3.3.5a_WotLK-1b1d21?style=for-the-badge" alt="WoW 3.3.5a">
   &nbsp;
   <img src="https://img.shields.io/badge/Realm-Onyxia_·_Horde-8b0000?style=for-the-badge" alt="Warmane Onyxia, Horde">
+  &nbsp;
+  <a href="https://discord.gg/MpwbuGEp69"><img src="https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the Discord"></a>
 </p>
 
 ---
