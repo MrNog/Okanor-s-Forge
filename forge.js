@@ -16,7 +16,7 @@ const ADDONS = [
     zip: "Okanvil.zip",
     slash: "/okanvil",
     icon: "icons/okanvil.webp",
-    main: ["okanvil/home.webp", "Okanvil home: who's online, rank counts and your rank"],
+    main: ["okanvil/card.webp", "Okanor the smith hammering a glowing blade on the anvil", "25% center"],
     tagline: "The raid and guild toolkit. Loot council, mini roll, snapshots, PuG builder, Raid Finder, notes and recruiting, in one window.",
   },
   {
@@ -28,8 +28,21 @@ const ADDONS = [
     zip: "RatStash.zip",
     slash: "/rst",
     icon: "icons/ratstash.webp",
-    main: ["ratstash/groups-wide.webp", "Bags in the Groups layout"],
+    main: ["ratstash/card.webp", "A rogue rat hugging his stash and inspecting a purple gem", "15% center"],
     tagline: "Bags and bank in one window each. Sorted groups that stay put, raid loot kept apart.",
+  },
+  {
+    id: "ratroll",
+    name: "RatRoll",
+    status: "released",
+    version: "0.1.0",
+    repo: "RatRoll",
+    zip: "RatRoll.zip",
+    slash: "/rr",
+    icon: "icons/ratroll.webp",
+    // og is wider than the 16:10 card: crop from 16% in, keeping the title and the rat
+    main: ["ratroll/og.webp", "RatRoll: a scarred rat blowing on two dice for luck", "16% center"],
+    tagline: "The lucky roll. A small roll window, master loot in a click and softres.it reserves: the loot part of Okanvil, on its own.",
   },
   {
     id: "pallypower-skin",
@@ -72,9 +85,11 @@ function esc(s) {
 }
 
 // An image or, if the file isn't there yet, a slot that names the file it wants.
-function slot(file, label, cls) {
+// `pos` (optional): where the crop sits, as CSS object-position, for a picture
+// whose subject is not in its top-left corner.
+function slot(file, label, cls, pos) {
   return `<figure class="slot ${cls || ""}" data-file="${esc(file)}">
-    <img src="${IMG + esc(file)}" alt="${esc(label)}" loading="lazy" onerror="this.parentNode.classList.add('empty');this.remove()">
+    <img src="${IMG + esc(file)}" alt="${esc(label)}"${pos ? ` style="object-position:${esc(pos)}"` : ""} loading="lazy" onerror="this.parentNode.classList.add('empty');this.remove()">
     <figcaption><span class="need">${esc(label)}</span><code>images/${esc(file)}</code></figcaption>
   </figure>`;
 }
@@ -116,7 +131,7 @@ function renderAddon(a, i) {
       ${stamp(a)}
       <div class="acts">${actions(a)}</div>
     </div>
-    <a class="banner" href="${a.id}/index.html" aria-label="${esc(a.name)}: full page">${slot(a.main[0], a.main[1], "shot")}</a>
+    <a class="banner" href="${a.id}/index.html" aria-label="${esc(a.name)}: full page">${slot(a.main[0], a.main[1], "shot", a.main[2])}</a>
   </article>`;
 }
 

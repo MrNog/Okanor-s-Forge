@@ -40,6 +40,14 @@
   <a href="https://github.com/MrNog/RatStash-/releases/latest/download/RatStash.zip">⬇ Download</a> · <a href="https://github.com/MrNog/RatStash-">Source</a>
 </td>
 </tr>
+<tr>
+<td width="72" align="center"><img src="images/icons/ratroll.webp" width="56" alt=""></td>
+<td>
+  <b><a href="https://mrnog.github.io/Okanor-s-Forge/ratroll/">RatRoll</a></b> &nbsp;<code>/rr</code><br>
+  The lucky roll: a small roll window, master loot in a click and softres.it reserves. The loot part of Okanvil, on its own.<br>
+  <a href="https://github.com/MrNog/RatRoll/releases/latest/download/RatRoll.zip">⬇ Download</a> · <a href="https://github.com/MrNog/RatRoll">Source</a>
+</td>
+</tr>
 </table>
 
 <p align="center">

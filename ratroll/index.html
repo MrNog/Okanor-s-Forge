@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141517" />
+  <meta name="description"
+    content="RatRoll — the lucky roll for WoW 3.3.5a: a small roll window, master loot in a click, and softres.it soft reserves." />
+  <meta property="og:title" content="RatRoll — the lucky roll" />
+  <meta property="og:description" content="Loot rolls for WoW 3.3.5a: roll window, master loot and soft reserves. From Okanor's Forge." />
+  <meta property="og:image" content="https://mrnog.github.io/Okanor-s-Forge/images/ratroll/og.webp" />
+  <link rel="icon" href="../images/icons/favicon.png" />
+  <title>RatRoll — Okanor's Forge</title>
+
+  <link rel="stylesheet" href="../assets/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/page.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </symbol>
+    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </symbol>
+    <symbol id="i-anvil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" /><path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" /><path d="M9 12v5" /><path d="M15 12v5" /><path d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" />
+    </symbol>
+  </svg>
+
+  <div class="ok-wrap">
+
+    <header class="top">
+      <div class="top-left">
+        <a class="back" href="../index.html">← Forge</a>
+        <a class="brand" href="#top" aria-label="RatRoll, back to top">
+          <svg>
+            <use href="#i-anvil" />
+          </svg>
+          <b>RatRoll</b>
+          <span>by Okanor · a RATS Warchief</span>
+        </a>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#roll">Rolling</a>
+        <a href="#master">Master loot</a>
+        <a href="#softres">Soft reserves</a>
+        <a href="#more">More</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div>
+        <p class="eyebrow">WotLK 3.3.5a · Released</p>
+        <h1>Blow on the dice. Roll.</h1>
+        <p class="lede">The loot part of Okanvil, on its own: a <b>small roll window</b>, master loot in a click and
+          <b>softres.it</b> reserves. Nothing else to set up.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/RatRoll/releases/latest/download/RatRoll.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+          <a class="ok-btn" href="https://github.com/MrNog/RatRoll">Source on GitHub</a>
+        </div>
+        <p class="meta">Free to play · type <code>/rr</code> in game</p>
+      </div>
+      <figure class="shot"><img src="../images/ratroll/banner.webp"
+          alt="Okanor at the loot table holding up an epic dagger, raiders waiting with dice"></figure>
+    </section>
+
+    <!-- ROLLING -->
+    <section class="feature" id="roll">
+      <div class="copy">
+        <div class="tag">Rolling</div>
+        <h2>What dropped, who rolled, who won.</h2>
+        <p>The window opens when loot drops and shows it boss by boss. Click an item to see its rolls, best first.
+          It stays out of the way: no popups, and it closes when the boss is pulled.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Each item in its quality colour, with who won it and how long it can still be traded</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Roll MS (100)</b> and <b>Roll OS (99)</b> buttons while a master-loot roll is open</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Under group loot, the need/greed rolls with a timer bar on each item</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/ratroll/art-roll.webp"
+          alt="A rogue rat throws two dice while three raiders lean in to watch"></figure>
+    </section>
+
+    <!-- MASTER LOOT -->
+    <section class="feature flip" id="master">
+      <div class="copy">
+        <div class="tag">Master loot</div>
+        <h2>Pick, roll, give.</h2>
+        <p>As master looter you get one more button. <b>Roll</b> announces the item for main or off spec;
+          once the rolls are in it turns into <b>Give</b>, which hands the item to the top roll.</p>
+        <div class="chat"><span class="ch">[Raid Warning]</span> <span class="who">[Okanor]</span>: Roll <span
+            class="epic">[Acidmaw Treads]</span> -- MAIN SPEC /roll (1-100)</div>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Click any roll to give the item to someone else</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>An item master loot could not hand over is marked in your bags: <b>trade to &lt;name&gt;</b></span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Raiders on Okanvil and raiders on RatRoll see the same roll</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/ratroll/art-luck.webp"
+          alt="A scarred rat raider blows on two dice in his fist for luck"></figure>
+    </section>
+
+    <!-- SOFT RESERVES -->
+    <section class="feature" id="softres">
+      <div class="copy">
+        <div class="tag">Soft reserves <i>/rrsr</i></div>
+        <h2>Paste the CSV. The raid gets it.</h2>
+        <p>On softres.it, <b>Export → CSV</b>. In game, as master looter: <b>SR</b>, then <b>CSV</b>, paste,
+          <b>Import</b>. Nobody else has to paste anything.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>An MS roll on a reserved item only counts the raiders who reserved it</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Every reserved item by boss, with all its reservers; who isn't in the raid is greyed out</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>[SR] tags on item tooltips for the whole raid</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/ratroll/softres.webp"
+          alt="The roll window beside the soft reserve list: 9 items by boss, reservers in class colours, won Okanata"></figure>
+    </section>
+
+    <!-- SMALL STUFF -->
+    <section class="tools" id="more">
+      <h2>And the small stuff.</h2>
+      <p>Things you only notice when they're missing.</p>
+      <div class="grid">
+        <article class="tool">
+          <h3>Your list, your Clear</h3>
+          <p>The loot stays saved after you log off, so you can check the last raid later. <b>Clear</b> (two clicks)
+            deletes your own list. Nobody else's changes.</p>
+        </article>
+        <article class="tool">
+          <h3>Plays nice with Okanvil</h3>
+          <p>Same code, same messages. Already running Okanvil? You have all of this, and RatRoll switches itself
+            off.</p>
+        </article>
+        <article class="tool">
+          <h3>Out of the way</h3>
+          <p>No main window, no minimap button, no popups. A DBM pull closes the roll window.</p>
+        </article>
+        <article class="tool full">
+          <h3>Painted for RATS</h3>
+          <p>The lucky rat on the icon and behind the windows, and the loot night around him.</p>
+          <div class="stack pair">
+            <figure class="shot"><img src="../images/ratroll/art-softres.webp" alt="A warlock rat checks the soft reserve list nailed to a post"></figure>
+            <figure class="shot"><img src="../images/ratroll/og.webp" alt="RatRoll: a scarred rat blowing on two dice for luck"></figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INSTALL -->
+    <section class="install" id="install">
+      <div class="intro">
+        <h2>Install in a minute.</h2>
+        <p>Already using Okanvil? You have all of this; RatRoll switches itself off.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/RatRoll/releases/latest/download/RatRoll.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <div><b>Download the zip</b><span>Always the latest release, straight from GitHub.</span></div>
+        </li>
+        <li>
+          <div><b>Extract it into AddOns</b><span><code>World of Warcraft\Interface\AddOns\RatRoll</code></span></div>
+        </li>
+        <li>
+          <div><b>Start the game</b><span><code>/rr</code> opens the roll window, <code>/ratroll help</code> lists
+              the commands.</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="ok-foot">
+      <span>RatRoll · forged by <b>Okanor</b> for <b>RATS</b> · the loot part of Okanvil</span>
+      <span>World of Warcraft is a trademark of Blizzard Entertainment. RatRoll is a fan-made addon.</span>
+    </footer>
+  </div>
+
+  <script src="../assets/page.js"></script>
+</body>
+
+</html>
