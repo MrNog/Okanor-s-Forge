@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#141517" />
   <meta name="description"
-    content="Okanvil — the raid & guild toolkit RATS forged for WotLK 3.3.5a: PuG builder, raid finder, loot council, loot history, snapshots, raid notes and recruiting." />
+    content="Okanvil — the raid & guild toolkit RATS forged for WotLK 3.3.5a: PuG builder, raid finder, loot council and soft reserves, loot history, upgrades, guild rankings, snapshots, raid notes and recruiting." />
   <link rel="icon" href="../images/icons/favicon.png" />
   <title>Okanvil — Okanor's Forge</title>
 
@@ -107,6 +107,9 @@
           <li><svg>
               <use href="#i-check" />
             </svg><span>Reads specs and gearscore off whoever applies</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Gear check on everyone who joins: missing enchants, empty sockets, raid achievements</span></li>
         </ul>
       </div>
       <figure class="shot"><img src="../images/okanvil/pug.webp"
@@ -139,10 +142,11 @@
     <!-- LOOT COUNCIL -->
     <section class="feature" id="council">
       <div class="copy">
-        <div class="tag">Loot Council</div>
+        <div class="tag">Loot Council · Soft reserve · Roll</div>
         <h2>A loot council people actually trust.</h2>
-        <p>The master looter picks the items, every raider answers <b>BIS · Upgrade · Small · OS · Pass</b> in a popup,
-          and the council sees each answer next to what that raider is wearing — ilvl gap included.</p>
+        <p>The master looter picks tonight's mode and every raider's Okanvil follows. On a <b>council</b> night, the ML
+          picks the items, every raider answers <b>BIS · Upgrade · Small · OS · Pass</b> in a popup, and the council
+          sees each answer next to what that raider is wearing — ilvl gap included.</p>
         <ul class="points">
           <li><svg>
               <use href="#i-check" />
@@ -156,6 +160,9 @@
           <li><svg>
               <use href="#i-check" />
             </svg><span>Test mode with your own gear, nothing ever handed out</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span><b>Soft reserve</b> night: raiders pick in a window or whisper <b>sr [item]</b>; it locks at the pull</span></li>
         </ul>
       </div>
       <div class="stack">
@@ -197,6 +204,52 @@
               alt="Mini Roll: winners and rolls for Scourge Hulk's drops"></figure>
         </div>
       </div>
+    </section>
+
+    <!-- UPGRADES -->
+    <section class="feature" id="upgrades">
+      <div class="copy">
+        <div class="tag">Upgrades <i>/okup</i></div>
+        <h2>"Is that an upgrade for me?"</h2>
+        <p>Okanvil knows your spec and what you're wearing. Every raid drop that beats it shows on one page, on the
+          boss's tooltip, and as a toast with a rat squeak the moment it drops.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Judged by the BiS list for your spec, or item level when your spec has none</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Only gear your class can actually use, never a tank mace for a DPS</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Follows the server's phase, so it never suggests a raid that isn't open yet</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/okanvil/upgrades.webp"
+          alt="Upgrades page: raid drops that beat your gear for your spec" onerror="this.parentNode.remove()"></figure>
+    </section>
+
+    <!-- RANKING -->
+    <section class="feature flip" id="ranking">
+      <div class="copy">
+        <div class="tag">Ranking</div>
+        <h2>The guild's leaderboard, in game.</h2>
+        <p>The DPS, Healing and Tanking boards from the guild website, with your toon front and centre: your rank,
+          your best parses, and the players just above and below you.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>An officer imports the boards once; everyone online gets them</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>A raider's best bosses on their tooltip</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Raider portraits with the optional <a href="https://github.com/MrNog/Okanvil/releases/download/art/Okanvil-Art.zip">art pack</a>, class art without it</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/okanvil/ranking.webp"
+          alt="Ranking page: your toon's card, rank and best parses" onerror="this.parentNode.remove()"></figure>
     </section>
 
     <!-- SNAPSHOTS -->
