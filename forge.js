@@ -80,19 +80,6 @@ const ADDONS = [
     main: ["pallypower-skin/bar.webp", "PallyPower buff bar with the skin"],
     tagline: "The Okanvil look for PallyPower. Who is missing a blessing shows as a coloured edge.",
   },
-  {
-    id: "redeemer",
-    hidden: true,
-    name: "Rats-Redeemer",
-    status: "fork",
-    version: "1.0",
-    repo: "Rats-Redeemer",
-    zip: "Rats-Redeemer.zip",
-    slash: "/redeemer",
-    icon: "icons/redeemer.webp",
-    main: ["redeemer/chat.webp", "A res line in chat"],
-    tagline: "Funny lines when you cast a resurrection. The RATS edition of Redeemer, credit to its original authors.",
-  },
 ];
 
 const STATUS = {
