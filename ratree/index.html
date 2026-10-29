@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141517" />
+  <meta name="description"
+    content="Ratree — talents and glyphs for WoW 3.3.5a: plan every point first, then learn them all at once. Presets, both specs, inspect, glyphs." />
+  <link rel="icon" href="../images/icons/favicon.png" />
+  <title>Ratree — Okanor's Forge</title>
+
+  <link rel="stylesheet" href="../assets/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/page.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </symbol>
+    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </symbol>
+    <symbol id="i-anvil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" /><path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" /><path d="M9 12v5" /><path d="M15 12v5" /><path d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" />
+    </symbol>
+  </svg>
+
+  <div class="ok-wrap">
+
+    <header class="top">
+      <div class="top-left">
+        <a class="back" href="../index.html">← Forge</a>
+        <a class="brand" href="#top" aria-label="Ratree, back to top">
+          <svg>
+            <use href="#i-anvil" />
+          </svg>
+          <b>Ratree</b>
+          <span>by Okanor · a RATS Warchief</span>
+        </a>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#plan">Plan</a>
+        <a href="#presets">Presets</a>
+        <a href="#art">Artwork</a>
+        <a href="#more">More</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div>
+        <p class="eyebrow">WotLK 3.3.5a · Released</p>
+        <h1>Plan every point, then learn them all at once.</h1>
+        <p class="lede">Talents and glyphs. The default window spends a point the moment you click; Ratree lets you
+          build the whole tree first, so a respec has <b>no misclicks</b>.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/Ratree/releases/latest/download/Ratree.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+          <a class="ok-btn" href="https://github.com/MrNog/Ratree">Source on GitHub</a>
+        </div>
+        <p class="meta">Free to play · press <code>N</code> or type <code>/ratree</code> in game</p>
+      </div>
+      <figure class="shot"><img src="../images/ratree/card.webp"
+          alt="Ratree art: a rat paladin behind the talent trees"></figure>
+    </section>
+
+    <!-- PLAN -->
+    <section class="feature" id="plan">
+      <div class="copy">
+        <div class="tag">Plan, then learn</div>
+        <h2>Nothing is spent until you say so.</h2>
+        <p>Left click adds a point, right click takes it back. <b>Learn Talents (N)</b> shows how many points are
+          planned; <b>Discard</b> throws the plan away.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Both specs on square tabs at the window's edge, with a cast bar while the switch casts</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Type a talent's name and every match pulses gold</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>The newer game's look: passive talents square, abilities round, arrows between requirements</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/ratree/talents.webp"
+          alt="The Ratree window: Holy, Protection and Retribution trees over the Retribution rat"></figure>
+    </section>
+
+    <!-- PRESETS -->
+    <section class="feature flip" id="presets">
+      <div class="copy">
+        <div class="tag">Presets</div>
+        <h2>Save a build, bars included.</h2>
+        <p>Save "Frost DK" or "Blood Tank" and apply it later, for example on a freshly reset dual spec. Presets are
+          kept per class and shared by every character of that class.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>A preset also keeps your action bars, forms and stances too</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Apply puts every spell, macro and item back on its key</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Talent spells fill in once they're learned</span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/ratree/presets.webp"
+          alt="In game: the presets list with saved builds"></figure>
+    </section>
+
+    <!-- ART -->
+    <section class="tools" id="art">
+      <h2>A rat for every spec.</h2>
+      <p>Behind your trees stands the rat of the spec you have the most points in, painted for Ratree in the RATS
+        guild style.</p>
+      <div class="stack pair">
+        <figure class="shot"><img src="../images/ratree/deathknight-frost.webp" alt="Frost death knight rat"></figure>
+        <figure class="shot"><img src="../images/ratree/mage-fire.webp" alt="Fire mage rat"></figure>
+        <figure class="shot"><img src="../images/ratree/druid-balance.webp" alt="Balance druid rat"></figure>
+        <figure class="shot"><img src="../images/ratree/priest-holy.webp" alt="Holy priest rat"></figure>
+      </div>
+    </section>
+
+    <!-- SMALL STUFF -->
+    <section class="tools" id="more">
+      <h2>And the small stuff.</h2>
+      <p>The rest of the talent and glyph work, in the same window.</p>
+      <div class="grid">
+        <article class="tool">
+          <h3>Glyphs</h3>
+          <p>Three major and three minor sockets on a gold star, each showing the ability it changes, with every
+            active glyph listed beside them.</p>
+        </article>
+        <article class="tool">
+          <h3>Inspect</h3>
+          <p>The inspect window's Talents tab opens the other player's trees here, kept steady even when tooltip
+            addons inspect someone else.</p>
+        </article>
+        <article class="tool">
+          <h3>Hunter pets</h3>
+          <p>The pet tree has its own tab.</p>
+        </article>
+        <article class="tool">
+          <h3>Any size</h3>
+          <p><code>/ratree scale 0.85</code> resizes the window, from 0.5 to 1.5.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INSTALL -->
+    <section class="install" id="install">
+      <div class="intro">
+        <h2>Install in a minute.</h2>
+        <p>Turn off other talent addons (Talented…). If one is still on, Ratree asks which one to keep.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/Ratree/releases/latest/download/Ratree.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <div><b>Download the zip</b><span>Always the latest release, straight from GitHub.</span></div>
+        </li>
+        <li>
+          <div><b>Extract it into AddOns</b><span><code>World of Warcraft\Interface\AddOns\Ratree</code></span></div>
+        </li>
+        <li>
+          <div><b>Start the game</b><span><code>N</code> opens your talents. WotLK can't take back a learned point:
+              reset at your class trainer before applying a different preset.</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="ok-foot">
+      <span>Ratree · forged by <b>Okanor</b> for <b>RATS</b> · talent window after DragonUI</span>
+      <span>World of Warcraft is a trademark of Blizzard Entertainment. Ratree is a fan-made addon.</span>
+    </footer>
+  </div>
+
+  <script src="../assets/page.js"></script>
+</body>
+
+</html>

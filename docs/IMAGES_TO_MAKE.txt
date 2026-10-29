@@ -1,0 +1,57 @@
+IMAGES TO MAKE — 5 images
+=========================
+
+How to do it:
+1. Copy one prompt (everything between the ===== lines) into the image AI.
+2. Pick the best result.
+3. Save it with the file name shown above the prompt.
+4. Send all 5 files back.
+
+Icons 1-4 are square, 1024 x 1024.
+Image 5 is wide, 1920 x 1200.
+
+
+------------------------------------------------------------
+1)  ratree.png   (square 1024 x 1024)
+------------------------------------------------------------
+=====
+A square game icon, 1024x1024. A small gnarled dark tree with three branches, each branch ending in a glowing gold talent rune-disc, roots gripping a black iron base. Key light: gold glow from the three discs, cold shadow around.
+
+Keep it SIMPLE: one object, big shapes, the object fills about 70% of the square, thick clean edges so it reads at 48 pixels. Centered. Square icon frame with a thin worn-gold bevel, dark vignette behind the object. World of Warcraft spell-icon style, painterly, grim Horde mood, black iron and worn gold #C0943A.
+
+Do NOT include: any lettering, text, numbers, runes that look like letters, watermark or logo; more than one main object; rats, faces or characters; thin fine details that vanish when small; busy background; cute or cartoon styling, pastel or pink colours; Alliance symbols; photorealism; blurry edges; floating dust or ember particles; heavy bloom.
+=====
+
+
+------------------------------------------------------------
+2)  redeemer.png   (square 1024 x 1024)
+------------------------------------------------------------
+=====
+A square game icon, 1024x1024. A small cracked stone gravestone with a warm golden ankh-shaped light rising out of the crack, a tiny jester's bell hanging off the corner of the stone. Key light: resurrection gold from the crack, pale green night ambience.
+
+Keep it SIMPLE: one object, big shapes, the object fills about 70% of the square, thick clean edges so it reads at 48 pixels. Centered. Square icon frame with a thin worn-gold bevel, dark vignette behind the object. World of Warcraft spell-icon style, painterly, grim Horde mood, black iron and worn gold #C0943A.
+
+Do NOT include: any lettering, text, numbers, runes that look like letters, watermark or logo; more than one main object; rats, faces or characters; thin fine details that vanish when small; busy background; cute or cartoon styling, pastel or pink colours; Alliance symbols; photorealism; blurry edges; floating dust or ember particles; heavy bloom.
+=====
+
+
+------------------------------------------------------------
+3)  okanorforge-icon.png   (square 1024 x 1024)
+------------------------------------------------------------
+=====
+A square game icon, 1024x1024. A black iron anvil with a glowing gold downward arrow struck into its face, as if the arrow was just forged, amber heat around it. Key light: forge amber from the arrow.
+
+Keep it SIMPLE: one object, big shapes, the object fills about 70% of the square, thick clean edges so it reads at 48 pixels. Centered. Square icon frame with a thin worn-gold bevel, dark vignette behind the object. World of Warcraft spell-icon style, painterly, grim Horde mood, black iron and worn gold #C0943A.
+
+Do NOT include: any lettering, text, numbers, runes that look like letters, watermark or logo; more than one main object; rats, faces or characters; thin fine details that vanish when small; busy background; cute or cartoon styling, pastel or pink colours; Alliance symbols; photorealism; blurry edges; floating dust or ember particles; heavy bloom.
+=====
+
+
+------------------------------------------------------------
+4)  okanorforge-background.png   (wide 1920 x 1200)
+------------------------------------------------------------
+=====
+World of Warcraft cinematic concept art, dark-souls Horde style, painterly brushwork, subtle film-grain texture. Wide 16:10. Inside a dark stone smithy at night: a massive black iron anvil on a stone block at the top-right, its face glowing amber-hot, a flanged war-mace resting across it. Behind it, wooden wall racks holding rolled scrolls and small iron boxes with wax seals, like a quartermaster's armoury. Key light: forge-fire amber from the top-right corner, falling off fast into deep cold blue-black shadow. The top third holds all the detail; the lower two-thirds are calm, dark, almost flat stone floor and shadow so rows of text stay readable over it. Low contrast in the lower area, no bright spots there. Clean render, clear air.
+
+Do NOT include: characters, rats or faces; text, letters, logos or watermark; floating embers, sparks or dust particles; heavy bloom; bright areas in the lower half; pastel or pink colours; Alliance symbols.
+=====

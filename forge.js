@@ -11,7 +11,7 @@ const ADDONS = [
     id: "okanvil",
     name: "Okanvil",
     status: "released",
-    version: "2.9.0",
+    version: "2.11.0",
     repo: "Okanvil",
     zip: "Okanvil.zip",
     slash: "/okanvil",
@@ -23,8 +23,8 @@ const ADDONS = [
     id: "ratstash",
     name: "RatStash",
     status: "released",
-    version: "0.1.2",
-    repo: "RatStash-",
+    version: "0.3.0",
+    repo: "RatStash",
     zip: "RatStash.zip",
     slash: "/rst",
     icon: "icons/ratstash.webp",
@@ -35,7 +35,7 @@ const ADDONS = [
     id: "ratroll",
     name: "RatRoll",
     status: "released",
-    version: "0.1.0",
+    version: "0.2.0",
     repo: "RatRoll",
     zip: "RatRoll.zip",
     slash: "/rr",
@@ -43,6 +43,30 @@ const ADDONS = [
     // og is wider than the 16:10 card: crop from 16% in, keeping the title and the rat
     main: ["ratroll/og.webp", "RatRoll: a scarred rat blowing on two dice for luck", "16% center"],
     tagline: "The lucky roll. A small roll window, master loot in a click and softres.it reserves: the loot part of Okanvil, on its own.",
+  },
+  {
+    id: "ratbites",
+    name: "RatBites",
+    status: "released",
+    version: "1.2.0",
+    repo: "RatBites",
+    zip: "RatBites.zip",
+    slash: "/bites",
+    icon: "icons/ratbites.webp",
+    main: ["ratbites/card.webp", "RatBites: an armoured rat biting a training post, combat numbers flying off it", "40% center"],
+    tagline: "Combat numbers with spell icons. Your hits and heals on each nameplate, what lands on you in its own box.",
+  },
+  {
+    id: "ratree",
+    name: "Ratree",
+    status: "released",
+    version: "1.1.1",
+    repo: "Ratree",
+    zip: "Ratree.zip",
+    slash: "/ratree",
+    icon: "icons/ratree.webp",
+    main: ["ratree/card.webp", "Ratree: talents and glyphs, a rat paladin behind the trees", "center"],
+    tagline: "Talents and glyphs. Plan every point first, then learn them all at once: no more misclicks during a respec.",
   },
   {
     id: "pallypower-skin",
@@ -135,16 +159,19 @@ function renderAddon(a, i) {
   </article>`;
 }
 
-// The latest release tag replaces the version written above, when GitHub answers.
+// The newest vX.Y.Z tag on GitHub replaces the version written above, when GitHub answers.
+// (Releases use a rolling "latest" tag, so the release name can't be used; the tags can.)
+const verKey = (v) => v.slice(1).split(".").map(Number);
+const newer = (a, b) => { const x = verKey(a), y = verKey(b); for (let i = 0; i < 3; i++) if (x[i] !== y[i]) return x[i] > y[i]; return false; };
 async function liveVersions() {
   for (const el of document.querySelectorAll("dd[data-ver]")) {
     const repo = el.dataset.ver;
     if (!repo) continue;
     try {
-      const r = await fetch("https://api.github.com/repos/MrNog/" + repo + "/releases/latest");
+      const r = await fetch("https://api.github.com/repos/MrNog/" + repo + "/tags?per_page=100");
       if (!r.ok) continue;
-      const tag = (await r.json()).tag_name;
-      if (tag && tag !== "latest") el.textContent = tag.replace(/^v/, "");
+      const tags = (await r.json()).map((t) => t.name).filter((n) => /^v\d+\.\d+\.\d+$/.test(n));
+      if (tags.length) el.textContent = tags.reduce((a, b) => (newer(b, a) ? b : a)).slice(1);
     } catch (e) { /* offline or rate-limited: keep the written version */ }
   }
 }

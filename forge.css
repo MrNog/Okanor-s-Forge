@@ -189,3 +189,7 @@ h2.sec::after { content: ""; flex: 1; height: 1px; background: var(--line) }
   .top nav { gap: 14px }
   .smith { grid-template-columns: minmax(0, 1fr); justify-items: start }
 }
+
+/* Install: the OkanorForge app line under the three steps */
+#install .app-line { margin: 22px 0 12px; max-width: 62ch; color: var(--dim) }
+#install .app-line b { color: var(--parchment) }

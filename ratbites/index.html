@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#141517" />
+  <meta name="description"
+    content="RatBites — combat numbers with spell icons for WoW 3.3.5a: your hits and heals on each nameplate, what lands on you in its own box." />
+  <link rel="icon" href="../images/icons/favicon.png" />
+  <title>RatBites — Okanor's Forge</title>
+
+  <link rel="stylesheet" href="../assets/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/page.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12" />
+    </symbol>
+    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      <polyline points="7 10 12 15 17 10" />
+      <line x1="12" y1="15" x2="12" y2="3" />
+    </symbol>
+    <symbol id="i-anvil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" /><path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" /><path d="M9 12v5" /><path d="M15 12v5" /><path d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" />
+    </symbol>
+  </svg>
+
+  <div class="ok-wrap">
+
+    <header class="top">
+      <div class="top-left">
+        <a class="back" href="../index.html">← Forge</a>
+        <a class="brand" href="#top" aria-label="RatBites, back to top">
+          <svg>
+            <use href="#i-anvil" />
+          </svg>
+          <b>RatBites</b>
+          <span>by Okanor · a RATS Warchief</span>
+        </a>
+      </div>
+      <nav aria-label="Sections">
+        <a href="#plates">Nameplates</a>
+        <a href="#colours">Colours</a>
+        <a href="#more">More</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div>
+        <p class="eyebrow">WotLK 3.3.5a · Released</p>
+        <h1>See every hit land where it lands.</h1>
+        <p class="lede">Combat numbers with spell icons. Your hits and heals rise over each <b>nameplate</b>; what
+          lands on you goes in its own box.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/RatBites/releases/latest/download/RatBites.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+          <a class="ok-btn" href="https://github.com/MrNog/RatBites">Source on GitHub</a>
+        </div>
+        <p class="meta">Free to play · type <code>/bites</code> in game, or click the rat on the minimap</p>
+      </div>
+      <figure class="shot"><img src="../images/ratbites/card.webp"
+          alt="RatBites art: an armoured rat biting a training post, combat numbers flying off it"></figure>
+    </section>
+
+    <!-- NAMEPLATES -->
+    <section class="feature" id="plates">
+      <div class="copy">
+        <div class="tag">Output and input</div>
+        <h2>Your numbers on their plate, theirs in a box.</h2>
+        <p>Every hit and heal rises over its target's nameplate with the spell's icon, or goes into the
+          <b>Output box</b>. Heals, shields and hits on you go to the <b>Input box</b>.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Heals land on the friend you healed, however you cast them: raid frames, mouseover</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Works with ElvUI plates; hits landing together stack a line apart</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Boxes move and resize, each with its own scroll direction, alignment and line time</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>The same spell again within a few seconds joins one line: a total with <code>x5</code></span></li>
+        </ul>
+      </div>
+      <figure class="shot"><img src="../images/ratbites/plates.webp"
+          alt="In game: hits and heals with their spell icons over enemy and friendly nameplates"></figure>
+    </section>
+
+    <!-- COLOURS -->
+    <section class="feature flip" id="colours">
+      <div class="copy">
+        <div class="tag">Colours <i>/bites colors</i></div>
+        <h2>The colour tells you what happened.</h2>
+        <p>Grey hits, gold big hits, orange crits, green heals, mint heal crits, dim overheal, blue shields, red
+          damage taken. Crits get a thick outline and bigger text.</p>
+        <ul class="points">
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Val'anyr, Divine Aegis and Sacred Shield show how much they absorb</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Auto-attacks show the weapon you have equipped</span></li>
+          <li><svg>
+              <use href="#i-check" />
+            </svg><span>Crits in your class colour, if you like</span></li>
+        </ul>
+      </div>
+      <figure class="shot tall"><img src="../images/ratbites/colors.webp"
+          alt="Every kind of number in its colour"></figure>
+    </section>
+
+    <!-- SMALL STUFF -->
+    <section class="tools" id="more">
+      <h2>And the small stuff.</h2>
+      <p>Set it the way you like it.</p>
+      <div class="grid">
+        <article class="tool">
+          <h3>Five animations</h3>
+          <p>Arc, Rise, Stay, Fountain or Fall, with sideways drift, travel distance and time on screen.</p>
+        </article>
+        <article class="tool">
+          <h3>Filters</h3>
+          <p>Normal or critical hits, auto-attacks, spells, damage over time, heals and shields, misses, pet.</p>
+        </article>
+        <article class="tool">
+          <h3>Your fonts</h3>
+          <p>Any font your addons share (ElvUI, SharedMedia), with text and icon size.</p>
+        </article>
+        <article class="tool">
+          <h3>Game numbers off</h3>
+          <p>The game's own floating numbers turn off while RatBites runs and come back when you disable it.</p>
+        </article>
+        <article class="tool">
+          <h3>Test it</h3>
+          <p><code>/bites test</code> puts one number of each kind on your target; <code>/bites move</code> unlocks
+            the boxes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INSTALL -->
+    <section class="install" id="install">
+      <div class="intro">
+        <h2>Install in a minute.</h2>
+        <p>Friendly nameplates must be on for heal numbers; you can hide their look in your nameplate addon.</p>
+        <div class="cta-row">
+          <a class="ok-btn primary" href="https://github.com/MrNog/RatBites/releases/latest/download/RatBites.zip">
+            <svg>
+              <use href="#i-dl" />
+            </svg> Download latest
+          </a>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <div><b>Download the zip</b><span>Always the latest release, straight from GitHub.</span></div>
+        </li>
+        <li>
+          <div><b>Extract it into AddOns</b><span><code>World of Warcraft\Interface\AddOns\RatBites</code></span></div>
+        </li>
+        <li>
+          <div><b>Start the game</b><span><code>/bites</code> or the minimap rat opens the settings.</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="ok-foot">
+      <span>RatBites · forged by <b>Okanor</b> for <b>RATS</b></span>
+      <span>World of Warcraft is a trademark of Blizzard Entertainment. RatBites is a fan-made addon.</span>
+    </footer>
+  </div>
+
+  <script src="../assets/page.js"></script>
+</body>
+
+</html>

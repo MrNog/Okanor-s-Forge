@@ -3,7 +3,7 @@
 Style follows `RATS/docs/art/STYLE.md` and Okanor's sheet (`characters/okanor/okanor.md`).
 Save each result under `images/` with the name given; the page shows a labelled empty slot until the file exists.
 
-**Done:** social card (hero kept on the Okanvil forge background, user preferred it), site icon, Okanvil icon. **Still open:** RatStash / PallyPower Skin / Redeemer icons.
+**Done:** social card (hero kept on the Okanvil forge background, user preferred it), site icon, Okanvil icon. **Still open:** PallyPower Skin / Redeemer / Ratree icons, OkanorForge app background + icon. The ready-to-send list for whoever makes them is `IMAGES_TO_MAKE.txt`.
 
 ## 1. Hero — `images/art/forge-hero.webp` (16:9, 1920×1080)
 
@@ -50,6 +50,34 @@ A square game icon, 1024x1024. A small cracked stone gravestone with a warm gold
 **Shared ending for every icon** (paste after each):
 
 ```
+Keep it SIMPLE: one object, big shapes, the object fills about 70% of the square, thick clean edges so it reads at 48 pixels. Centered. Square icon frame with a thin worn-gold bevel, dark vignette behind the object. World of Warcraft spell-icon style, painterly, grim Horde mood, black iron and worn gold #C0943A.
+
+Do NOT include: any lettering, text, numbers, runes that look like letters, watermark or logo; more than one main object; rats, faces or characters; thin fine details that vanish when small; busy background; cute or cartoon styling, pastel or pink colours; Alliance symbols; photorealism; blurry edges; floating dust or ember particles; heavy bloom.
+```
+
+## 5. Ratree icon — `images/icons/ratree.webp` (1024×1024)
+
+```
+A square game icon, 1024x1024. A small gnarled dark tree with three branches, each branch ending in a glowing gold talent rune-disc, roots gripping a black iron base. Key light: gold glow from the three discs, cold shadow around.
+
+Keep it SIMPLE: one object, big shapes, the object fills about 70% of the square, thick clean edges so it reads at 48 pixels. Centered. Square icon frame with a thin worn-gold bevel, dark vignette behind the object. World of Warcraft spell-icon style, painterly, grim Horde mood, black iron and worn gold #C0943A.
+
+Do NOT include: any lettering, text, numbers, runes that look like letters, watermark or logo; more than one main object; rats, faces or characters; thin fine details that vanish when small; busy background; cute or cartoon styling, pastel or pink colours; Alliance symbols; photorealism; blurry edges; floating dust or ember particles; heavy bloom.
+```
+
+## 6. OkanorForge app — window background — `images/art/okanorforge-bg.webp` (16:10, 1920×1200)
+
+```
+World of Warcraft cinematic concept art, dark-souls Horde style, painterly brushwork, subtle film-grain texture. Wide 16:10. Inside a dark stone smithy at night: a massive black iron anvil on a stone block at the top-right, its face glowing amber-hot, a flanged war-mace resting across it. Behind it, wooden wall racks holding rolled scrolls and small iron boxes with wax seals, like a quartermaster's armoury. Key light: forge-fire amber from the top-right corner, falling off fast into deep cold blue-black shadow. The top third holds all the detail; the lower two-thirds are calm, dark, almost flat stone floor and shadow so rows of text stay readable over it. Low contrast in the lower area, no bright spots there. Clean render, clear air.
+
+Do NOT include: characters, rats or faces; text, letters, logos or watermark; floating embers, sparks or dust particles; heavy bloom; bright areas in the lower half; pastel or pink colours; Alliance symbols.
+```
+
+## 7. OkanorForge app — icon — `images/icons/okanorforge.png` (1024×1024 → .ico 256/64/32/16)
+
+```
+A square game icon, 1024x1024. A black iron anvil with a glowing gold downward arrow struck into its face, as if the arrow was just forged, amber heat around it. Key light: forge amber from the arrow.
+
 Keep it SIMPLE: one object, big shapes, the object fills about 70% of the square, thick clean edges so it reads at 48 pixels. Centered. Square icon frame with a thin worn-gold bevel, dark vignette behind the object. World of Warcraft spell-icon style, painterly, grim Horde mood, black iron and worn gold #C0943A.
 
 Do NOT include: any lettering, text, numbers, runes that look like letters, watermark or logo; more than one main object; rats, faces or characters; thin fine details that vanish when small; busy background; cute or cartoon styling, pastel or pink colours; Alliance symbols; photorealism; blurry edges; floating dust or ember particles; heavy bloom.
