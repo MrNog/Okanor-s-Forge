@@ -3,7 +3,7 @@
 Style follows `RATS/docs/art/STYLE.md` and Okanor's sheet (`characters/okanor/okanor.md`).
 Save each result under `images/` with the name given; the page shows a labelled empty slot until the file exists.
 
-**Done:** social card (hero kept on the Okanvil forge background, user preferred it), site icon, Okanvil icon. **Still open:** PallyPower Skin / Redeemer / Ratree icons, OkanorForge app background + icon. The ready-to-send list for whoever makes them is `IMAGES_TO_MAKE.txt`.
+**Done:** social card (hero kept on the Okanvil forge background, user preferred it), site icon, Okanvil icon. **Still open:** PallyPower Skin icon (Redeemer dropped: project deleted). The ready-to-send list for whoever makes them is `IMAGES_TO_MAKE.txt`.
 
 ## 1. Hero — `images/art/forge-hero.webp` (16:9, 1920×1080)
 
